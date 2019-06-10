@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+
+### On initial Setup Appollo
+cd server
+yarn install
+yarn prisma deploy
+When prompted where you want to set/deploy your service, select Demo server (it requires login, you could sign in with your GitHub account), then choose a region, e.g. demo-us1 or demo-eu1. The Demo server includes a free instance of an AWS Aurora database. (If you have Docker installed, you can also deploy locally.)
+
 ## Available Scripts
 
 In the project directory, you can run:
