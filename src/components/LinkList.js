@@ -21,14 +21,7 @@ class LinkList extends Component {
     // ]
     const FEED_QUERY = gql`
     {
-      feed {
-        links {
-          id
-          createdAt
-          url
-          description
-        }
-      }
+      numberOfStudies
     }
   `
 
@@ -58,13 +51,14 @@ class LinkList extends Component {
       if (loading) return <div>Fetching</div>
       if (error) return <div>Error</div>
 
-      const linksToRender = data.feed.links
+      const linksToRender = data.numberOfStudies
 console.log(linksToRender);
       return (
         // <div>
         //   {linksToRender.map(link => <Link key={link.id} link={link} />)}
         // </div>
-        <CustomTable link={linksToRender} />
+        // <CustomTable link={linksToRender} />
+        <div>{linksToRender}</div>
       )
     }}
   </Query>

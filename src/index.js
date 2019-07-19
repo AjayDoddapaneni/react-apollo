@@ -29,7 +29,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory'
 
 // 2
 const httpLink = createHttpLink({
-  uri: 'http://localhost:4000'
+  uri: 'https://k9dc.essential-dev.com/v1/graphql/'
 })
 
 // 3
